@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilazo/colorama.css">
+    <title>qukistrukis</title>
+</head>
+<body>
+    <!-- Pantalla de bienvenida -->
+    <div id="pantalla-bienvenida">
+        <div id="formulario-bienvenida" class="formulario-bienvenida">
+            <h1 class="titulo-bienvenida">Bienvenido a Qukistrukis ✨</h1>
+            <p class="autor-texto">Nombre: Junior Iván Rodríguez Mera</p>
+            <p class="autor-texto">Ficha: 3336066 😎 los mejores </p>
+
+            <button type="button" id="boton-inicio" class="boton-enviar" onclick="iniciarExperiencia()">
+                <span class="boton-icono">▶️</span><br>
+                Comenzar
+            </button>
+        </div>
+    </div>
+
+    <!-- Contenido principal (inicialmente oculto) -->
+    <div id="contenido-principal">
+        <div class="cabezon">
+            <h1 id="titulo">
+                <span>B</span>
+                <span>i</span>
+                <span>e</span>
+                <span>n</span>
+                <span>v</span>
+                <span>e</span>
+                <span>n</span>
+                <span>i</span>
+                <span>d</span>
+                <span>o</span> 
+                <span>a</span> 
+                <span>q</span>
+                <span>u</span>
+                <span>k</span>
+                <span>i</span>
+                <span>s</span>
+                <span>t</span>
+                <span>r</span>
+                <span>u</span>
+                <span>k</span>
+                <span>i</span>
+                <span>s</span>
+            </h1>
+        </div>
+        <div class="tronco ">
+            <h2>
+                un lugar donde se muestra lo que se me ocurre <br>
+            </h2>
+            aqui lo voy a mostrar <br>
+            todo lo que se me ocurra <br>
+            y lo que se me ocurra es esto <br>
+            <br>
+            <img class="imagen-mover imagen-responsive" src="imagina/image_dd41f6cd.png" alt="Imagen animada">
+            <audio id="miAudio" autoplay muted>
+                <source src="music/hitno.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <script>
+        function iniciarExperiencia() {
+            document.getElementById('pantalla-bienvenida').style.display = 'none';
+            document.getElementById('contenido-principal').style.display = 'block';
+            const audio = document.getElementById('miAudio');
+            audio.muted = false;
+            audio.play();
+        }
+    </script>
+</body>
+</html>
